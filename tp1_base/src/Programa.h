@@ -57,6 +57,13 @@ public:
 	Instruccion instruccion(Id idRutina, int i) const;
 private:
 	// COMPLETAR
+	struct rutina {
+		Id nombreRutina;
+		vector<Instruccion> instruccionesRutina;
+	};
+	vector<rutina> rutinas;
+	int getPosRutina(Id rutina);
+	int posRutina;
 };
 
 #endif /*__PROGRAMA_H__*/

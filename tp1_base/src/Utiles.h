@@ -2,7 +2,7 @@
 #define __UTILES_H__
 
 typedef int Operacion;
-
+using namespace std;
 const Operacion PUSH = 1;
 const Operacion ADD = 2;
 const Operacion SUB = 3;
@@ -12,6 +12,6 @@ const Operacion READ = 6;
 const Operacion JUMP = 7;
 const Operacion JUMPZ = 8;
 
-typedef std::string Id;
+typedef string Id;
 
 #endif /*__UTILES_H__*/

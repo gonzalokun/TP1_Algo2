@@ -39,7 +39,16 @@ public:
 
         // Precondición: la operación es READ, WRITE, JUMP o JUMPZ
 	Id nombre() const;
+
+	Operacion getOperacionInstruccion();
+	int getValorInstruccion();
+	Id getRutinaInstruccion();
+
 private:
+	Operacion operacionInstruccion;
+	int valorInstruccion;
+	Id rutinaInstruccion;
+
 	// COMPLETAR
 };
 
