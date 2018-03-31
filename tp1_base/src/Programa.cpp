@@ -5,51 +5,40 @@ Programa::Programa() {
 
 }
 
-// Agrega una instrucción a la rutina indicada.
-// Si la rutina indicada no existe, crea una nueva rutina
-// con dicho nombre.
 void Programa::agregarInstruccion(Id idRutina, Instruccion instruccion){
-    if(esRutinaExistente(idRutina)) {
+    int posRutina = getPosRutina(idRutina);
+    if(posRutina != -1) {
         rutinas[posRutina].instruccionesRutina.push_back(instruccion);
     }else {//si no existe
-        rutinas[longitud(idRutina)].instruccionesRutina.push_back(instruccion);
+        rutinas.push_back({idRutina,{instruccion}});
     }
 }
 
-// Devuelve True si idRutina representa una rutina existente.
 bool Programa::esRutinaExistente(Id idRutina) const{
     return (getPosRutina(idRutina)>=0);
 }
 
-// Devuelve la longitud (cantidad de instrucciones) de la rutina
-// indicada.
-//
-// Precondición: esRutinaExistente(idRutina)
 int Programa::longitud(Id idRutina) const {
     int i = 0;
     while (i < rutinas.size() && rutinas[i].nombreRutina != idRutina) {
         i++;
     }
-    return (rutinas.size() > 0 &&(rutinas[i].nombreRutina == idRutina))? rutinas[i].instruccionesRutina.size() : 0;
+    return (rutinas.size() > 0 && i < rutinas.size() &&(rutinas[i].nombreRutina == idRutina))? rutinas[i].instruccionesRutina.size() : 0;
 }
 
-// Devuelve la i-ésima instrucción de la rutina indicada.
-//
-// Precondición:
-//   esRutinaExistente(idRutina) && 0 <= i && i < longitud(idRutina)
+//aca pide que i pertenezca al rango de las instrucciones. que pasa si no? que devolvemos? no existen las instrucciones vacias, si o si hay que darle parametros
 Instruccion Programa::instruccion(Id idRutina, int i) const {
-    Instruccion inst;
+    //Instruccion inst;
+    int posRutina = getPosRutina(idRutina);
     if(esRutinaExistente(idRutina) && i >= 0 && i < rutinas[posRutina].instruccionesRutina.size()) {
-        inst = rutinas[posRutina].instruccionesRutina[i];
+        return Instruccion(rutinas[posRutina].instruccionesRutina[i]);
     }
-    return inst;
-}
+}//mejorar la forma de retorno aca (en base a entender que hacer con la precondicion)
 
-int Programa::getPosRutina(Id rutina) {
+int Programa::getPosRutina(Id rutina) const{
     int i = 0;
-    while (i < rutinas.size() && rutinas[i].nombreRutina != idRutina) {
+    while (i < rutinas.size() && rutinas[i].nombreRutina != rutina) {
         i++;
     }
-    posRutina = (i<= rutinas.size())? i : -1;
-    return posRutina;
+    return (rutinas.size() != 0 && i< rutinas.size())? i : -1;
 }

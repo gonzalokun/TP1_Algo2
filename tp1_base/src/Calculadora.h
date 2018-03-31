@@ -3,34 +3,32 @@
 #include <iostream>
 #include <vector>
 #include <string>
-typedef int memoria;
+#include "Programa.h"
+
 class Calculadora {
 
 public:
 
-    Calculadora::Calculadora(Programa programa);/* construye una calculadora que tiene cargado
-            el programa indicado.*/
-    void Calculadora::asignarVariable(Id idVariable, int valor);/* establece el valor de la
-    variable indicada en la memoria de la calculadora.*/
-    void Calculadora::ejecutar(Id idRutina);/* ejecuta el programa hasta alcanzar alguna de las
-            condiciones de finalización. La ejecución comienza en la primera instrucción de la rutina especificada por el
-            parámetro idRutina. Observar que si idRutina no es una rutina existente en el programa, la ejecución
-            finaliza de manera inmediata.*/
-    int Calculadora::valorVariable(Id idVariable) const; /*devuelve que tiene la variable indicada
-            en la memoria de la calculadora. Si nunca se le dio valor a dicha variable, se asume que su valor
-            por defecto es 0.*/
+    Calculadora(Programa programa);
+    void asignarVariable(Id idVariable, int valor);
+    void ejecutar(Id idRutina);
+    int valorVariable(Id idVariable) const;
 private:
 
-    int existeVariable(Id nombre);
+    int existeVariable(Id nombre) const;
+
     Programa _programa;
-    vector<memoria> pila;
+
     struct variables{
         Id nombre;
         int valor;
     };
     vector<variables> var;
-    int posVar;
 
+    void gestorDeOperaciones(Instruccion inst);
+    vector<memoria> pila; //si queremos ejecutar varios programas con la misma calculadora no tendriamos memoria
+        //quiza seria mejor generar un struct de memoria, que almacene la pila y ademas el nombre del programa al q pertenece
+    void operacionJUMP(Id rutina);
 
 };
 

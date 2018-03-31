@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.obj"
   "CMakeFiles/correrTests.dir/tests/test_instruccion.cpp.obj"
   "CMakeFiles/correrTests.dir/tests/test_programa.cpp.obj"
+  "CMakeFiles/correrTests.dir/src/Calculadora.cpp.obj"
+  "CMakeFiles/correrTests.dir/src/Instruccion.cpp.obj"
+  "CMakeFiles/correrTests.dir/src/Programa.cpp.obj"
   "correrTests.pdb"
   "correrTests.exe"
   "correrTests.exe.manifest"

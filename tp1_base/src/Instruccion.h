@@ -21,7 +21,8 @@
 //   JUMP     <nombre>
 //   JUMPZ    <nombre>
 //
-class Instruccion {
+class Instruccion { //no entiendo que tendriamos que hacer con las precondiciones: o sea, si restringimos con un if para que se cumpla la precondicion, que pasa cuando if da false?
+                    //es decir, si para obtener una operacion de una rutina, indice de instruccion de la rutina debe ser valido.., pero que pasa si no cumple esto? porqu
 public:
 	// Precondición: la operación es PUSH
 	Instruccion(Operacion operacion, int valor);
@@ -39,10 +40,6 @@ public:
 
         // Precondición: la operación es READ, WRITE, JUMP o JUMPZ
 	Id nombre() const;
-
-	Operacion getOperacionInstruccion();
-	int getValorInstruccion();
-	Id getRutinaInstruccion();
 
 private:
 	Operacion operacionInstruccion;

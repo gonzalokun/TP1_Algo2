@@ -194,6 +194,114 @@ gtest_main/fast:
 	$(MAKE) -f tests\google-test\CMakeFiles\gtest_main.dir\build.make tests/google-test/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+src/Calculadora.obj: src/Calculadora.cpp.obj
+
+.PHONY : src/Calculadora.obj
+
+# target to build an object file
+src/Calculadora.cpp.obj:
+	$(MAKE) -f CMakeFiles\correrTests.dir\build.make CMakeFiles/correrTests.dir/src/Calculadora.cpp.obj
+.PHONY : src/Calculadora.cpp.obj
+
+src/Calculadora.i: src/Calculadora.cpp.i
+
+.PHONY : src/Calculadora.i
+
+# target to preprocess a source file
+src/Calculadora.cpp.i:
+	$(MAKE) -f CMakeFiles\correrTests.dir\build.make CMakeFiles/correrTests.dir/src/Calculadora.cpp.i
+.PHONY : src/Calculadora.cpp.i
+
+src/Calculadora.s: src/Calculadora.cpp.s
+
+.PHONY : src/Calculadora.s
+
+# target to generate assembly for a file
+src/Calculadora.cpp.s:
+	$(MAKE) -f CMakeFiles\correrTests.dir\build.make CMakeFiles/correrTests.dir/src/Calculadora.cpp.s
+.PHONY : src/Calculadora.cpp.s
+
+src/Instruccion.obj: src/Instruccion.cpp.obj
+
+.PHONY : src/Instruccion.obj
+
+# target to build an object file
+src/Instruccion.cpp.obj:
+	$(MAKE) -f CMakeFiles\correrTests.dir\build.make CMakeFiles/correrTests.dir/src/Instruccion.cpp.obj
+.PHONY : src/Instruccion.cpp.obj
+
+src/Instruccion.i: src/Instruccion.cpp.i
+
+.PHONY : src/Instruccion.i
+
+# target to preprocess a source file
+src/Instruccion.cpp.i:
+	$(MAKE) -f CMakeFiles\correrTests.dir\build.make CMakeFiles/correrTests.dir/src/Instruccion.cpp.i
+.PHONY : src/Instruccion.cpp.i
+
+src/Instruccion.s: src/Instruccion.cpp.s
+
+.PHONY : src/Instruccion.s
+
+# target to generate assembly for a file
+src/Instruccion.cpp.s:
+	$(MAKE) -f CMakeFiles\correrTests.dir\build.make CMakeFiles/correrTests.dir/src/Instruccion.cpp.s
+.PHONY : src/Instruccion.cpp.s
+
+src/Programa.obj: src/Programa.cpp.obj
+
+.PHONY : src/Programa.obj
+
+# target to build an object file
+src/Programa.cpp.obj:
+	$(MAKE) -f CMakeFiles\correrTests.dir\build.make CMakeFiles/correrTests.dir/src/Programa.cpp.obj
+.PHONY : src/Programa.cpp.obj
+
+src/Programa.i: src/Programa.cpp.i
+
+.PHONY : src/Programa.i
+
+# target to preprocess a source file
+src/Programa.cpp.i:
+	$(MAKE) -f CMakeFiles\correrTests.dir\build.make CMakeFiles/correrTests.dir/src/Programa.cpp.i
+.PHONY : src/Programa.cpp.i
+
+src/Programa.s: src/Programa.cpp.s
+
+.PHONY : src/Programa.s
+
+# target to generate assembly for a file
+src/Programa.cpp.s:
+	$(MAKE) -f CMakeFiles\correrTests.dir\build.make CMakeFiles/correrTests.dir/src/Programa.cpp.s
+.PHONY : src/Programa.cpp.s
+
+tests/test_calculadora.obj: tests/test_calculadora.cpp.obj
+
+.PHONY : tests/test_calculadora.obj
+
+# target to build an object file
+tests/test_calculadora.cpp.obj:
+	$(MAKE) -f CMakeFiles\correrTests.dir\build.make CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.obj
+.PHONY : tests/test_calculadora.cpp.obj
+
+tests/test_calculadora.i: tests/test_calculadora.cpp.i
+
+.PHONY : tests/test_calculadora.i
+
+# target to preprocess a source file
+tests/test_calculadora.cpp.i:
+	$(MAKE) -f CMakeFiles\correrTests.dir\build.make CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.i
+.PHONY : tests/test_calculadora.cpp.i
+
+tests/test_calculadora.s: tests/test_calculadora.cpp.s
+
+.PHONY : tests/test_calculadora.s
+
+# target to generate assembly for a file
+tests/test_calculadora.cpp.s:
+	$(MAKE) -f CMakeFiles\correrTests.dir\build.make CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.s
+.PHONY : tests/test_calculadora.cpp.s
+
 tests/test_instruccion.obj: tests/test_instruccion.cpp.obj
 
 .PHONY : tests/test_instruccion.obj
@@ -263,6 +371,18 @@ help:
 	@echo ... list_install_components
 	@echo ... gtest
 	@echo ... gtest_main
+	@echo ... src/Calculadora.obj
+	@echo ... src/Calculadora.i
+	@echo ... src/Calculadora.s
+	@echo ... src/Instruccion.obj
+	@echo ... src/Instruccion.i
+	@echo ... src/Instruccion.s
+	@echo ... src/Programa.obj
+	@echo ... src/Programa.i
+	@echo ... src/Programa.s
+	@echo ... tests/test_calculadora.obj
+	@echo ... tests/test_calculadora.i
+	@echo ... tests/test_calculadora.s
 	@echo ... tests/test_instruccion.obj
 	@echo ... tests/test_instruccion.i
 	@echo ... tests/test_instruccion.s

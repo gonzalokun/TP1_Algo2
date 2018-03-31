@@ -56,10 +56,35 @@ include CMakeFiles/correrTests.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/correrTests.dir/flags.make
 
+CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.obj: CMakeFiles/correrTests.dir/flags.make
+CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.obj: CMakeFiles/correrTests.dir/includes_CXX.rsp
+CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.obj: ../tests/test_calculadora.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\correrTests.dir\tests\test_calculadora.cpp.obj -c "C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\tests\test_calculadora.cpp"
+
+CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\tests\test_calculadora.cpp" > CMakeFiles\correrTests.dir\tests\test_calculadora.cpp.i
+
+CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\tests\test_calculadora.cpp" -o CMakeFiles\correrTests.dir\tests\test_calculadora.cpp.s
+
+CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.obj.requires:
+
+.PHONY : CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.obj.requires
+
+CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.obj.provides: CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\correrTests.dir\build.make CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.obj.provides.build
+.PHONY : CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.obj.provides
+
+CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.obj.provides.build: CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.obj
+
+
 CMakeFiles/correrTests.dir/tests/test_instruccion.cpp.obj: CMakeFiles/correrTests.dir/flags.make
 CMakeFiles/correrTests.dir/tests/test_instruccion.cpp.obj: CMakeFiles/correrTests.dir/includes_CXX.rsp
 CMakeFiles/correrTests.dir/tests/test_instruccion.cpp.obj: ../tests/test_instruccion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/correrTests.dir/tests/test_instruccion.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/correrTests.dir/tests/test_instruccion.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\correrTests.dir\tests\test_instruccion.cpp.obj -c "C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\tests\test_instruccion.cpp"
 
 CMakeFiles/correrTests.dir/tests/test_instruccion.cpp.i: cmake_force
@@ -84,7 +109,7 @@ CMakeFiles/correrTests.dir/tests/test_instruccion.cpp.obj.provides.build: CMakeF
 CMakeFiles/correrTests.dir/tests/test_programa.cpp.obj: CMakeFiles/correrTests.dir/flags.make
 CMakeFiles/correrTests.dir/tests/test_programa.cpp.obj: CMakeFiles/correrTests.dir/includes_CXX.rsp
 CMakeFiles/correrTests.dir/tests/test_programa.cpp.obj: ../tests/test_programa.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/correrTests.dir/tests/test_programa.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/correrTests.dir/tests/test_programa.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\correrTests.dir\tests\test_programa.cpp.obj -c "C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\tests\test_programa.cpp"
 
 CMakeFiles/correrTests.dir/tests/test_programa.cpp.i: cmake_force
@@ -106,16 +131,99 @@ CMakeFiles/correrTests.dir/tests/test_programa.cpp.obj.provides: CMakeFiles/corr
 CMakeFiles/correrTests.dir/tests/test_programa.cpp.obj.provides.build: CMakeFiles/correrTests.dir/tests/test_programa.cpp.obj
 
 
+CMakeFiles/correrTests.dir/src/Calculadora.cpp.obj: CMakeFiles/correrTests.dir/flags.make
+CMakeFiles/correrTests.dir/src/Calculadora.cpp.obj: CMakeFiles/correrTests.dir/includes_CXX.rsp
+CMakeFiles/correrTests.dir/src/Calculadora.cpp.obj: ../src/Calculadora.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/correrTests.dir/src/Calculadora.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\correrTests.dir\src\Calculadora.cpp.obj -c "C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\src\Calculadora.cpp"
+
+CMakeFiles/correrTests.dir/src/Calculadora.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/correrTests.dir/src/Calculadora.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\src\Calculadora.cpp" > CMakeFiles\correrTests.dir\src\Calculadora.cpp.i
+
+CMakeFiles/correrTests.dir/src/Calculadora.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/correrTests.dir/src/Calculadora.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\src\Calculadora.cpp" -o CMakeFiles\correrTests.dir\src\Calculadora.cpp.s
+
+CMakeFiles/correrTests.dir/src/Calculadora.cpp.obj.requires:
+
+.PHONY : CMakeFiles/correrTests.dir/src/Calculadora.cpp.obj.requires
+
+CMakeFiles/correrTests.dir/src/Calculadora.cpp.obj.provides: CMakeFiles/correrTests.dir/src/Calculadora.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\correrTests.dir\build.make CMakeFiles/correrTests.dir/src/Calculadora.cpp.obj.provides.build
+.PHONY : CMakeFiles/correrTests.dir/src/Calculadora.cpp.obj.provides
+
+CMakeFiles/correrTests.dir/src/Calculadora.cpp.obj.provides.build: CMakeFiles/correrTests.dir/src/Calculadora.cpp.obj
+
+
+CMakeFiles/correrTests.dir/src/Instruccion.cpp.obj: CMakeFiles/correrTests.dir/flags.make
+CMakeFiles/correrTests.dir/src/Instruccion.cpp.obj: CMakeFiles/correrTests.dir/includes_CXX.rsp
+CMakeFiles/correrTests.dir/src/Instruccion.cpp.obj: ../src/Instruccion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/correrTests.dir/src/Instruccion.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\correrTests.dir\src\Instruccion.cpp.obj -c "C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\src\Instruccion.cpp"
+
+CMakeFiles/correrTests.dir/src/Instruccion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/correrTests.dir/src/Instruccion.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\src\Instruccion.cpp" > CMakeFiles\correrTests.dir\src\Instruccion.cpp.i
+
+CMakeFiles/correrTests.dir/src/Instruccion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/correrTests.dir/src/Instruccion.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\src\Instruccion.cpp" -o CMakeFiles\correrTests.dir\src\Instruccion.cpp.s
+
+CMakeFiles/correrTests.dir/src/Instruccion.cpp.obj.requires:
+
+.PHONY : CMakeFiles/correrTests.dir/src/Instruccion.cpp.obj.requires
+
+CMakeFiles/correrTests.dir/src/Instruccion.cpp.obj.provides: CMakeFiles/correrTests.dir/src/Instruccion.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\correrTests.dir\build.make CMakeFiles/correrTests.dir/src/Instruccion.cpp.obj.provides.build
+.PHONY : CMakeFiles/correrTests.dir/src/Instruccion.cpp.obj.provides
+
+CMakeFiles/correrTests.dir/src/Instruccion.cpp.obj.provides.build: CMakeFiles/correrTests.dir/src/Instruccion.cpp.obj
+
+
+CMakeFiles/correrTests.dir/src/Programa.cpp.obj: CMakeFiles/correrTests.dir/flags.make
+CMakeFiles/correrTests.dir/src/Programa.cpp.obj: CMakeFiles/correrTests.dir/includes_CXX.rsp
+CMakeFiles/correrTests.dir/src/Programa.cpp.obj: ../src/Programa.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/correrTests.dir/src/Programa.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\correrTests.dir\src\Programa.cpp.obj -c "C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\src\Programa.cpp"
+
+CMakeFiles/correrTests.dir/src/Programa.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/correrTests.dir/src/Programa.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\src\Programa.cpp" > CMakeFiles\correrTests.dir\src\Programa.cpp.i
+
+CMakeFiles/correrTests.dir/src/Programa.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/correrTests.dir/src/Programa.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\src\Programa.cpp" -o CMakeFiles\correrTests.dir\src\Programa.cpp.s
+
+CMakeFiles/correrTests.dir/src/Programa.cpp.obj.requires:
+
+.PHONY : CMakeFiles/correrTests.dir/src/Programa.cpp.obj.requires
+
+CMakeFiles/correrTests.dir/src/Programa.cpp.obj.provides: CMakeFiles/correrTests.dir/src/Programa.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\correrTests.dir\build.make CMakeFiles/correrTests.dir/src/Programa.cpp.obj.provides.build
+.PHONY : CMakeFiles/correrTests.dir/src/Programa.cpp.obj.provides
+
+CMakeFiles/correrTests.dir/src/Programa.cpp.obj.provides.build: CMakeFiles/correrTests.dir/src/Programa.cpp.obj
+
+
 # Object files for target correrTests
 correrTests_OBJECTS = \
+"CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.obj" \
 "CMakeFiles/correrTests.dir/tests/test_instruccion.cpp.obj" \
-"CMakeFiles/correrTests.dir/tests/test_programa.cpp.obj"
+"CMakeFiles/correrTests.dir/tests/test_programa.cpp.obj" \
+"CMakeFiles/correrTests.dir/src/Calculadora.cpp.obj" \
+"CMakeFiles/correrTests.dir/src/Instruccion.cpp.obj" \
+"CMakeFiles/correrTests.dir/src/Programa.cpp.obj"
 
 # External object files for target correrTests
 correrTests_EXTERNAL_OBJECTS =
 
+correrTests.exe: CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.obj
 correrTests.exe: CMakeFiles/correrTests.dir/tests/test_instruccion.cpp.obj
 correrTests.exe: CMakeFiles/correrTests.dir/tests/test_programa.cpp.obj
+correrTests.exe: CMakeFiles/correrTests.dir/src/Calculadora.cpp.obj
+correrTests.exe: CMakeFiles/correrTests.dir/src/Instruccion.cpp.obj
+correrTests.exe: CMakeFiles/correrTests.dir/src/Programa.cpp.obj
 correrTests.exe: CMakeFiles/correrTests.dir/build.make
 correrTests.exe: tests/google-test/libgtest.a
 correrTests.exe: tests/google-test/libgtest_main.a
@@ -123,7 +231,7 @@ correrTests.exe: tests/google-test/libgtest.a
 correrTests.exe: CMakeFiles/correrTests.dir/linklibs.rsp
 correrTests.exe: CMakeFiles/correrTests.dir/objects1.rsp
 correrTests.exe: CMakeFiles/correrTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable correrTests.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\diego\Documents\Facultad\AED 2\Labo\TP1_Algo2\tp1_base\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable correrTests.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\correrTests.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -131,8 +239,12 @@ CMakeFiles/correrTests.dir/build: correrTests.exe
 
 .PHONY : CMakeFiles/correrTests.dir/build
 
+CMakeFiles/correrTests.dir/requires: CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.obj.requires
 CMakeFiles/correrTests.dir/requires: CMakeFiles/correrTests.dir/tests/test_instruccion.cpp.obj.requires
 CMakeFiles/correrTests.dir/requires: CMakeFiles/correrTests.dir/tests/test_programa.cpp.obj.requires
+CMakeFiles/correrTests.dir/requires: CMakeFiles/correrTests.dir/src/Calculadora.cpp.obj.requires
+CMakeFiles/correrTests.dir/requires: CMakeFiles/correrTests.dir/src/Instruccion.cpp.obj.requires
+CMakeFiles/correrTests.dir/requires: CMakeFiles/correrTests.dir/src/Programa.cpp.obj.requires
 
 .PHONY : CMakeFiles/correrTests.dir/requires
 

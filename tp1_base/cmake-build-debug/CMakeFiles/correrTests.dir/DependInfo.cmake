@@ -4,6 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Calculadora.cpp" "C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/CMakeFiles/correrTests.dir/src/Calculadora.cpp.obj"
+  "C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Instruccion.cpp" "C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/CMakeFiles/correrTests.dir/src/Instruccion.cpp.obj"
+  "C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Programa.cpp" "C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/CMakeFiles/correrTests.dir/src/Programa.cpp.obj"
+  "C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/test_calculadora.cpp" "C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.obj"
   "C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/test_instruccion.cpp" "C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/CMakeFiles/correrTests.dir/tests/test_instruccion.cpp.obj"
   "C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/test_programa.cpp" "C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/CMakeFiles/correrTests.dir/tests/test_programa.cpp.obj"
   )
