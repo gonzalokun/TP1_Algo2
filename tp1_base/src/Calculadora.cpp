@@ -54,9 +54,30 @@ void Calculadora::ejecutar(Id idRutina) {
 
     while(_programa.esRutinaExistente(_rutinaActual) && _indiceDeEjecucion < _programa.longitud(_rutinaActual)){
         gestorDeOperaciones(_programa.instruccion(_rutinaActual, _indiceDeEjecucion));
+
+        //*/
+
+        printf("\nPILA EN INSTRUCCION %d:\n", _indiceDeEjecucion);
+
+        for(int i = 0; i < pila.size(); i++){
+            printf("VALOR %d: %d\n", i, pila[i]);
+        }
+        //*/
+
         _indiceDeEjecucion++;
     }
 
+    //*/
+
+    printf("\nPILA AL FINAL:\n");
+
+    for(int i = 0; i < pila.size(); i++){
+        printf("VALOR %d: %d\n", i, pila[i]);
+    }
+
+    printf("------------------------------\n");
+
+    //*/
 }
 
 /*
@@ -123,12 +144,16 @@ void Calculadora::gestorDeOperaciones(Instruccion inst) {
         }
 
         else {
-            asignarVariable(inst.nombre(),0);
+            asignarVariable(inst.nombre(), 0);
         }
     }
 
     if(inst.operacion() == READ) {
         pila.push_back(valorVariable(inst.nombre()));
+
+        //*/
+        std::cout << "LEIDO EL VALOR DE la variable " << inst.nombre() << " IGUAL A " << valorVariable(inst.nombre()) << std::endl;
+        //*/
     }
 
     if(inst.operacion() == JUMP) {

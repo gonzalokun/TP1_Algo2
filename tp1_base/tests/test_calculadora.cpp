@@ -39,7 +39,8 @@ TEST(test_calculadora, rutina_con_jump_sin_sentido){
     EXPECT_EQ(c.valorVariable("x"), 160);
 }
 
-//*
+//*/
+
 TEST(test_calculadora, rutina_con_jump){
     Programa p;
 
@@ -55,7 +56,7 @@ TEST(test_calculadora, rutina_con_jump){
     Calculadora c(p);
 
     c.ejecutar("A");
-    EXPECT_EQ(c.valorVariable("x"), 0);
+    EXPECT_EQ(c.valorVariable("x"), 80);
 }
 
 //*/
@@ -82,6 +83,8 @@ TEST(test_calculadora, testeo_con_jumps){
 
 //*/
 
+//*/
+
 TEST(test_calculadora, testeo_parametros){
     Programa p;
 
@@ -93,4 +96,19 @@ TEST(test_calculadora, testeo_parametros){
 
     c.ejecutar("A");
     EXPECT_EQ(c.valorVariable("x"), 40);
+}
+
+//*/
+
+TEST(test_calculadora, rutina_write_read){
+    Programa p;
+
+    p.agregarInstruccion("A", Instruccion(PUSH, 80));
+    p.agregarInstruccion("A", Instruccion(WRITE, "x"));
+    p.agregarInstruccion("A", Instruccion(READ, "x"));
+
+    Calculadora c(p);
+
+    c.ejecutar("A");
+    EXPECT_EQ(c.valorVariable("x"), 80);
 }
