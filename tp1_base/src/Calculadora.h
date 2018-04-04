@@ -30,6 +30,7 @@ private:
     vector<variables> var;
 
     void gestorDeOperaciones(Instruccion inst);
+    
     vector<memoria> pila;
     // si queremos ejecutar varios programas con la misma calculadora no tendriamos memoria
     // quiza seria mejor generar un struct de memoria, que almacene la pila y ademas el nombre del programa al q pertenece

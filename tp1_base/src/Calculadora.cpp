@@ -82,6 +82,7 @@ void Calculadora::ejecutar(Id idRutina) {
     }
 
     printf("------------------------------\n");
+    printf("\n");
 
     //*/
 
@@ -168,11 +169,11 @@ void Calculadora::gestorDeOperaciones(Instruccion inst) {
     }
 
     if(inst.operacion() == READ) {
-        pila.push_back(valorVariable(inst.nombre()));
-
         //*/
         std::cout << "LEIDO EL VALOR DE la variable " << inst.nombre() << " IGUAL A " << valorVariable(inst.nombre()) << std::endl;
         //*/
+
+        pila.push_back(valorVariable(inst.nombre()));
     }
 
     if(inst.operacion() == JUMP) {
@@ -199,7 +200,17 @@ void Calculadora::gestorDeOperaciones(Instruccion inst) {
 
 void Calculadora::operacionJUMP(Id rutina) {
     _rutinaActual = rutina;
-    _indiceDeEjecucion = 0;
+    _indiceDeEjecucion = -1;
+}
+
+int Calculadora::existeVariable(Id nombre) const{
+    int i = 0;
+
+    while(i < var.size() && var[i].nombre != nombre) {
+        i++;
+    }
+
+    return ((var.size() == 0 && i == 0) || (i >= var.size()))? -1 : i;
 }
 
 int Calculadora::valorVariable(Id idVariable) const{
@@ -209,11 +220,3 @@ int Calculadora::valorVariable(Id idVariable) const{
 /*devuelve que tiene la variable indicada
             en la memoria de la calculadora. Si nunca se le dio valor a dicha variable, se asume que su valor
             por defecto es 0.*/
-
-int Calculadora::existeVariable(Id nombre) const{
-    int i = 0;
-    while(i < var.size() && var[i].nombre!=nombre) {
-        i++;
-    }
-    return (var.size() == 0 && i == 0)? -1 : i;
-}
