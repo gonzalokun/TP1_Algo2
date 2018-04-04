@@ -125,6 +125,7 @@ void Calculadora::gestorDeOperaciones(Instruccion inst) {
 
     if(inst.operacion() == MUL) {
         if(pila.size() > 1) {
+            //std::cout << "CHE PASAMOS POR CUANDO LA PILA TIENE 2 O MAS COSAS" << std::endl;
             int guardoValorMult = pila[pila.size()-1] * pila[pila.size()-2];
 
             pila.pop_back();
@@ -133,8 +134,18 @@ void Calculadora::gestorDeOperaciones(Instruccion inst) {
         }
 
         else if(pila.size() == 0){
+            //std::cout << "CHE PASAMOS POR CUANDO LA PILA NO TIENE NADA" << std::endl;
             pila.push_back(0);
         }
+
+        //*/
+        else if(pila.size() == 1){
+            //std::cout << "CHE PASAMOS POR CUANDO LA PILA TIENE 1 cosa" << std::endl;
+            //pila.pop_back();
+            //pila.push_back(0);
+            pila[0] = 0;
+        }
+        //*/
     }
 
     if(inst.operacion() == WRITE) {
@@ -151,7 +162,7 @@ void Calculadora::gestorDeOperaciones(Instruccion inst) {
     if(inst.operacion() == READ) {
         pila.push_back(valorVariable(inst.nombre()));
 
-        //*/
+        /*/
         std::cout << "LEIDO EL VALOR DE la variable " << inst.nombre() << " IGUAL A " << valorVariable(inst.nombre()) << std::endl;
         //*/
     }

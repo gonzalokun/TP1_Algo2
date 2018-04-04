@@ -32,6 +32,9 @@ TEST(test_calculadora, rutina_con_jump_sin_sentido){
     p.agregarInstruccion("A", Instruccion(ADD));
     p.agregarInstruccion("A", Instruccion(WRITE, "x"));
     p.agregarInstruccion("A", Instruccion(JUMP, "METODO_QUE_NO_EXISTE"));
+    p.agregarInstruccion("A", Instruccion(PUSH, 80));
+    p.agregarInstruccion("A", Instruccion(ADD));
+    p.agregarInstruccion("A", Instruccion(WRITE, "x"));
 
     Calculadora c(p);
 
@@ -63,7 +66,7 @@ TEST(test_calculadora, rutina_con_jump){
 
 //*
 
-TEST(test_calculadora, testeo_con_jumps){
+TEST(test_calculadora, rutina_con_jump2){
     Programa p;
 
     p.agregarInstruccion("A", Instruccion(PUSH, 40));
@@ -100,6 +103,8 @@ TEST(test_calculadora, testeo_parametros){
 
 //*/
 
+//*/
+
 TEST(test_calculadora, rutina_write_read){
     Programa p;
 
@@ -112,3 +117,22 @@ TEST(test_calculadora, rutina_write_read){
     c.ejecutar("A");
     EXPECT_EQ(c.valorVariable("x"), 80);
 }
+
+//*/
+
+TEST(test_calculadora, mult){
+    Programa p;
+
+    p.agregarInstruccion("A", Instruccion(PUSH, 888));
+    p.agregarInstruccion("A", Instruccion(WRITE, "x"));
+    p.agregarInstruccion("A", Instruccion(READ, "x"));
+    p.agregarInstruccion("A", Instruccion(MUL));
+    p.agregarInstruccion("A", Instruccion(WRITE, "x"));
+
+    Calculadora c(p);
+
+    c.ejecutar("A");
+    EXPECT_EQ(c.valorVariable("x"), 0);
+}
+
+//*/

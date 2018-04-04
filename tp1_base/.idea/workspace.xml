@@ -85,8 +85,8 @@
       <file leaf-file-name="Calculadora.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Calculadora.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="155" column="12" lean-forward="false" selection-start-line="155" selection-start-column="12" selection-end-line="155" selection-end-column="12" />
+            <state relative-caret-position="516">
+              <caret line="147" column="12" lean-forward="true" selection-start-line="147" selection-start-column="12" selection-end-line="147" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -95,8 +95,8 @@
       <file leaf-file-name="test_calculadora.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test_calculadora.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="800">
-              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="333">
+              <caret line="129" column="55" lean-forward="true" selection-start-line="129" selection-start-column="55" selection-end-line="129" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -177,6 +177,10 @@
       <method />
     </configuration>
     <configuration default="false" name="All in test_calculadora.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="solucion" TARGET_NAME="correrTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="solucion" RUN_TARGET_NAME="correrTests" TEST_PATTERN="test_calculadora.*:test_calculadora/*.*:*/test_calculadora.*/*:*/test_calculadora/*.*" TEST_MODE="PATTERN">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in test_calculadora" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="solucion" TARGET_NAME="correrTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="solucion" RUN_TARGET_NAME="correrTests" TEST_CLASS="test_calculadora" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
     </configuration>
@@ -370,7 +374,7 @@
       <envs />
       <method />
     </configuration>
-    <list size="7">
+    <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
       <item index="1" class="java.lang.String" itemvalue="Google Test.correrTests" />
       <item index="2" class="java.lang.String" itemvalue="Application.gtest" />
@@ -378,12 +382,14 @@
       <item index="4" class="java.lang.String" itemvalue="Google Test.All in test_programa.cpp" />
       <item index="5" class="java.lang.String" itemvalue="Google Test.All in test_instruccion.cpp" />
       <item index="6" class="java.lang.String" itemvalue="Google Test.All in test_calculadora.cpp" />
+      <item index="7" class="java.lang.String" itemvalue="Google Test.All in test_calculadora" />
     </list>
     <recent_temporary>
-      <list size="3">
+      <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Google Test.All in test_calculadora.cpp" />
-        <item index="1" class="java.lang.String" itemvalue="Google Test.All in test_instruccion.cpp" />
-        <item index="2" class="java.lang.String" itemvalue="Google Test.All in test_programa.cpp" />
+        <item index="1" class="java.lang.String" itemvalue="Google Test.All in test_programa.cpp" />
+        <item index="2" class="java.lang.String" itemvalue="Google Test.All in test_calculadora" />
+        <item index="3" class="java.lang.String" itemvalue="Google Test.All in test_instruccion.cpp" />
       </list>
     </recent_temporary>
   </component>
@@ -403,44 +409,44 @@
       <workItem from="1522462528175" duration="5624000" />
       <workItem from="1522506353004" duration="9074000" />
       <workItem from="1522515481002" duration="1201000" />
-      <workItem from="1522862038297" duration="5862000" />
+      <workItem from="1522862038297" duration="7466000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 15h 39m 23s.xml">
+    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 16h 14m 42s.xml">
       <configuration name="All in test_calculadora.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 15h 39m 53s.xml">
+    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 16h 15m 59s.xml">
       <configuration name="All in test_calculadora.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 15h 41m 59s.xml">
+    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 16h 16m 37s.xml">
       <configuration name="All in test_calculadora.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 15h 42m 41s.xml">
+    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 16h 17m 06s.xml">
       <configuration name="All in test_calculadora.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 15h 45m 21s.xml">
+    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 16h 18m 10s.xml">
       <configuration name="All in test_calculadora.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 15h 47m 53s.xml">
+    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 16h 18m 25s.xml">
       <configuration name="All in test_calculadora.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 15h 49m 13s.xml">
+    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 16h 19m 17s.xml">
       <configuration name="All in test_calculadora.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 15h 50m 01s.xml">
+    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 16h 19m 43s.xml">
       <configuration name="All in test_calculadora.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 15h 50m 18s.xml">
-      <configuration name="All in test_calculadora.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="All_in_test_programa_cpp - 2018.04.04 at 16h 14m 34s.xml">
+      <configuration name="All in test_programa.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 15h 52m 50s.xml">
-      <configuration name="All in test_calculadora.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="correrTests - 2018.04.04 at 16h 14m 26s.xml">
+      <configuration name="correrTests" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21761000" />
+    <option name="totallyTimeSpent" value="23365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -725,16 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Programa.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#47#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_instruccion.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -761,6 +757,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Programa.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Programa.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#47#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Calculadora.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -771,26 +785,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Programa.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_calculadora.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="333">
+          <caret line="129" column="55" lean-forward="true" selection-start-line="129" selection-start-column="55" selection-end-line="129" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Calculadora.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="155" column="12" lean-forward="false" selection-start-line="155" selection-start-column="12" selection-end-line="155" selection-end-column="12" />
+        <state relative-caret-position="516">
+          <caret line="147" column="12" lean-forward="true" selection-start-line="147" selection-start-column="12" selection-end-line="147" selection-end-column="12" />
           <folding />
         </state>
       </provider>
