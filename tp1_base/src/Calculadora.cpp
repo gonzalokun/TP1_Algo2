@@ -45,6 +45,8 @@ void Calculadora::ejecutar(Id idRutina) {
     }
     */
 
+    //*/
+
     //Con este ciclo se deberia poder cambiar de rutina en tiempo real por medio de jumps
     //Suponemos que una vez que se hace un jump NO se vuelve atrás
 
@@ -57,12 +59,16 @@ void Calculadora::ejecutar(Id idRutina) {
 
         //*/
 
-        printf("\nPILA EN INSTRUCCION %d:\n", _indiceDeEjecucion);
+        //printf("\nPILA EN INSTRUCCION %d:\n", _indiceDeEjecucion);
+
+        std::cout << "PILA EN INSTRUCCION: " << _indiceDeEjecucion << " DE LA RUTINA: " << _rutinaActual << std::endl;
 
         for(int i = 0; i < pila.size(); i++){
-            printf("VALOR %d: %d\n", i, pila[i]);
+            printf("VALOR DE LA POS %d: %d\n", i, pila[i]);
         }
         //*/
+
+        printf("\n");
 
         _indiceDeEjecucion++;
     }
@@ -76,6 +82,8 @@ void Calculadora::ejecutar(Id idRutina) {
     }
 
     printf("------------------------------\n");
+
+    //*/
 
     //*/
 }
@@ -162,7 +170,7 @@ void Calculadora::gestorDeOperaciones(Instruccion inst) {
     if(inst.operacion() == READ) {
         pila.push_back(valorVariable(inst.nombre()));
 
-        /*/
+        //*/
         std::cout << "LEIDO EL VALOR DE la variable " << inst.nombre() << " IGUAL A " << valorVariable(inst.nombre()) << std::endl;
         //*/
     }
@@ -173,8 +181,12 @@ void Calculadora::gestorDeOperaciones(Instruccion inst) {
 
     if(inst.operacion() == JUMPZ) {
 
-        if(pila.size() == 0 || (pila.size() != 0) && (pila[pila.size()-1] == 0) ) {
-            pila.pop_back();
+        if(pila.size() == 0 || (pila.size() != 0) && (pila[pila.size() - 1] == 0) ) {
+
+            if(pila.size() != 0){
+                pila.pop_back();
+            }
+
             operacionJUMP(inst.nombre());
         }
 
@@ -192,7 +204,7 @@ void Calculadora::operacionJUMP(Id rutina) {
 
 int Calculadora::valorVariable(Id idVariable) const{
     int posVar = existeVariable(idVariable);
-    return (posVar!=-1)? var[posVar].valor : 0;
+    return (posVar != -1) ? var[posVar].valor : 0;
 }
 /*devuelve que tiene la variable indicada
             en la memoria de la calculadora. Si nunca se le dio valor a dicha variable, se asume que su valor

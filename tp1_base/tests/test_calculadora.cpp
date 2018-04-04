@@ -24,6 +24,25 @@ TEST(test_calculadora, ejecutar_suma_sin_elem) {
     EXPECT_EQ(c.valorVariable("x"),42);
 }
 
+//*/
+
+TEST(test_calculadora, mult_con_un_solo_parametro){
+    Programa p;
+
+    p.agregarInstruccion("A", Instruccion(PUSH, 888));
+    p.agregarInstruccion("A", Instruccion(WRITE, "x"));
+    p.agregarInstruccion("A", Instruccion(READ, "x"));
+    p.agregarInstruccion("A", Instruccion(MUL));
+    p.agregarInstruccion("A", Instruccion(WRITE, "x"));
+
+    Calculadora c(p);
+
+    c.ejecutar("A");
+    EXPECT_EQ(c.valorVariable("x"), 0);
+}
+
+//*/
+
 TEST(test_calculadora, rutina_con_jump_sin_sentido){
     Programa p;
 
@@ -88,7 +107,7 @@ TEST(test_calculadora, rutina_con_jump2){
 
 //*/
 
-TEST(test_calculadora, testeo_parametros){
+TEST(test_calculadora, rutina_con_write){
     Programa p;
 
     p.agregarInstruccion("A", Instruccion(PUSH, 40));
@@ -120,19 +139,24 @@ TEST(test_calculadora, rutina_write_read){
 
 //*/
 
-TEST(test_calculadora, mult){
+TEST(test_calculadora, rutina_con_jumpz){
     Programa p;
 
-    p.agregarInstruccion("A", Instruccion(PUSH, 888));
+    p.agregarInstruccion("A", Instruccion(PUSH, 40));
+    p.agregarInstruccion("A", Instruccion(ADD));
     p.agregarInstruccion("A", Instruccion(WRITE, "x"));
-    p.agregarInstruccion("A", Instruccion(READ, "x"));
-    p.agregarInstruccion("A", Instruccion(MUL));
-    p.agregarInstruccion("A", Instruccion(WRITE, "x"));
+    p.agregarInstruccion("A", Instruccion(JUMPZ, "B"));
+
+    p.agregarInstruccion("B", Instruccion(READ, "x"));
+    p.agregarInstruccion("B", Instruccion(READ, "x"));
+    p.agregarInstruccion("B", Instruccion(ADD));
+    p.agregarInstruccion("B", Instruccion(WRITE, "x"));
+    p.agregarInstruccion("B", Instruccion(READ, "x"));
 
     Calculadora c(p);
 
     c.ejecutar("A");
-    EXPECT_EQ(c.valorVariable("x"), 0);
+    EXPECT_EQ(c.valorVariable("x"), 80);
 }
 
 //*/
