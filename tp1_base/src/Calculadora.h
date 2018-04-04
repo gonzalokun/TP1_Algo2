@@ -13,6 +13,7 @@ public:
     void asignarVariable(Id idVariable, int valor);
     void ejecutar(Id idRutina);
     int valorVariable(Id idVariable) const;
+
 private:
 
     int existeVariable(Id nombre) const;
@@ -23,6 +24,7 @@ private:
         Id nombre;
         int valor;
     };
+
     vector<variables> var;
 
     void gestorDeOperaciones(Instruccion inst);

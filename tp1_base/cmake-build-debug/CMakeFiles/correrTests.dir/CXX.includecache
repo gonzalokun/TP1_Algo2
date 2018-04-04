@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -278,11 +278,11 @@ cxxabi.h
 acxx_demangle.h
 -
 
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Calculadora.cpp
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Calculadora.cpp
 Calculadora.h
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Calculadora.h
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Calculadora.h
 
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Calculadora.h
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Calculadora.h
 iostream
 -
 vector
@@ -290,25 +290,25 @@ vector
 string
 -
 Programa.h
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Programa.h
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Programa.h
 
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Instruccion.cpp
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Instruccion.cpp
 Instruccion.h
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Instruccion.h
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Instruccion.h
 
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Instruccion.h
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Instruccion.h
 iostream
 -
 vector
 -
 Utiles.h
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Utiles.h
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Utiles.h
 
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Programa.cpp
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Programa.cpp
 Programa.h
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Programa.h
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Programa.h
 
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Programa.h
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Programa.h
 iostream
 -
 vector
@@ -316,27 +316,27 @@ vector
 string
 -
 Instruccion.h
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Instruccion.h
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Instruccion.h
 
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Utiles.h
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Utiles.h
 
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/test_calculadora.cpp
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/test_calculadora.cpp
 gtest/gtest.h
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/gtest/gtest.h
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/gtest/gtest.h
 ../src/Calculadora.h
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Calculadora.h
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Calculadora.h
 
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/test_instruccion.cpp
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/test_instruccion.cpp
 gtest/gtest.h
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/gtest/gtest.h
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/gtest/gtest.h
 ../src/Instruccion.h
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Instruccion.h
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Instruccion.h
 
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/test_programa.cpp
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/test_programa.cpp
 gtest/gtest.h
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/gtest/gtest.h
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/gtest/gtest.h
 ../src/Instruccion.h
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Instruccion.h
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Instruccion.h
 ../src/Programa.h
-C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Programa.h
+/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Programa.h
 

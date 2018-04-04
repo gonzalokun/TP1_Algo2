@@ -8,267 +8,273 @@
 		<Option virtualFolders="CMake Files\;CMake Files\tests\;CMake Files\tests\google-test\;CMake Files\tests\google-test\cmake\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug"/>
+				<Option working_dir="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/strip">
-				<Option working_dir="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug"/>
+				<Option working_dir="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="correrTests">
-				<Option output="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/correrTests.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/google-test/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 correrTests"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="correrTests/fast">
-				<Option output="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/correrTests.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/google-test/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 correrTests/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/local">
-				<Option working_dir="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug"/>
+				<Option working_dir="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install">
-				<Option working_dir="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug"/>
+				<Option working_dir="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="list_install_components">
-				<Option working_dir="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug"/>
+				<Option working_dir="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="gtest">
-				<Option output="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/libgtest.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/google-test/include"/>
-					<Add directory="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/google-test"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
-				</Compiler>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug"/>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="gtest/fast">
-				<Option output="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/libgtest.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test"/>
+			<Target title="edit_cache">
+				<Option working_dir="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="correrTests">
+				<Option output="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/correrTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/google-test/include"/>
-					<Add directory="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/google-test"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+					<Add directory="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 correrTests"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="correrTests/fast">
+				<Option output="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/correrTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 correrTests/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main">
-				<Option output="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test"/>
+				<Option output="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/google-test/include"/>
-					<Add directory="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/google-test"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+					<Add directory="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/include"/>
+					<Add directory="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest_main"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main/fast">
-				<Option output="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test"/>
+				<Option output="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/google-test/include"/>
-					<Add directory="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/google-test"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+					<Add directory="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/include"/>
+					<Add directory="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/include"/>
+					<Add directory="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/include"/>
+					<Add directory="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Calculadora.cpp">
+		<Unit filename="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Calculadora.cpp">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Calculadora.h">
+		<Unit filename="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Calculadora.h">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Instruccion.cpp">
+		<Unit filename="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Instruccion.cpp">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Instruccion.h">
+		<Unit filename="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Instruccion.h">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Programa.cpp">
+		<Unit filename="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Programa.cpp">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Programa.h">
+		<Unit filename="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Programa.h">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/src/Utiles.h">
+		<Unit filename="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Utiles.h">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/google-test/src/gtest-all.cc">
+		<Unit filename="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/src/gtest-all.cc">
 			<Option target="gtest"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/google-test/src/gtest_main.cc">
+		<Unit filename="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/test_calculadora.cpp">
+		<Unit filename="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/test_calculadora.cpp">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/test_instruccion.cpp">
+		<Unit filename="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/test_instruccion.cpp">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/test_programa.cpp">
+		<Unit filename="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/test_programa.cpp">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/CMakeLists.txt">
+		<Unit filename="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/google-test/CMakeLists.txt">
+		<Unit filename="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\google-test\"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/google-test/CMakeLists.txt">
+		<Unit filename="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\google-test\"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/google-test/cmake/internal_utils.cmake">
+		<Unit filename="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\tests\google-test\cmake\"/>
 		</Unit>
-		<Unit filename="C:/Users/diego/Documents/Facultad/AED 2/Labo/TP1_Algo2/tp1_base/tests/google-test/cmake/internal_utils.cmake">
+		<Unit filename="/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\tests\google-test\cmake\"/>
 		</Unit>
 	</Project>
