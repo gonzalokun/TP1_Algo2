@@ -5,6 +5,8 @@
 #include <string>
 #include "Programa.h"
 
+//IMPLEMENTAR UNA PILA COMO LA GENTE (SOLO SI HACE FALTA)
+
 class Calculadora {
 
 public:
@@ -28,10 +30,15 @@ private:
     vector<variables> var;
 
     void gestorDeOperaciones(Instruccion inst);
-    vector<memoria> pila; //si queremos ejecutar varios programas con la misma calculadora no tendriamos memoria
-        //quiza seria mejor generar un struct de memoria, que almacene la pila y ademas el nombre del programa al q pertenece
+    vector<memoria> pila;
+    // si queremos ejecutar varios programas con la misma calculadora no tendriamos memoria
+    // quiza seria mejor generar un struct de memoria, que almacene la pila y ademas el nombre del programa al q pertenece
+
     void operacionJUMP(Id rutina);
 
+    //Privados para el ciclo alternativo
+    Id _rutinaActual;
+    int _indiceDeEjecucion;
 };
 
 

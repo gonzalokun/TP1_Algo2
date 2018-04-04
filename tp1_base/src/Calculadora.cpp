@@ -9,15 +9,21 @@ Calculadora::Calculadora(Programa programa) : _programa(programa){
 
 
 void Calculadora::asignarVariable(Id idVariable, int valor) {
+    //establece el valor de la variable
+    //indicada en la memoria de la calculadora.
+
     int posVar = existeVariable(idVariable);
+
     if(posVar != -1){
         var[posVar].valor = valor;
-    } else {//si no existe la var, entonces la guardamos junto a su valor
+    }
+
+    //si no existe la var, entonces la guardamos junto a su valor
+    else {
         var.push_back({idVariable,valor});
     }
-}/* establece el valor de la
-    variable indicada en la memoria de la calculadora.*/
 
+}
 
 void Calculadora::ejecutar(Id idRutina) {
 
@@ -28,6 +34,7 @@ void Calculadora::ejecutar(Id idRutina) {
      * finaliza de manera inmediata.
      */
 
+    /*
     if(_programa.esRutinaExistente(idRutina)) {
         int recInstRutinas = 0;
 
@@ -35,6 +42,19 @@ void Calculadora::ejecutar(Id idRutina) {
             gestorDeOperaciones(_programa.instruccion(idRutina,recInstRutinas));
             recInstRutinas++;
         }
+    }
+    */
+
+    //Con este ciclo se deberia poder cambiar de rutina en tiempo real por medio de jumps
+    //Suponemos que una vez que se hace un jump NO se vuelve atrás
+
+    //SETEAMOS LA PRIMER RUTINA, PUEDE CAMBIAR LUEGO
+    _rutinaActual = idRutina;
+    _indiceDeEjecucion = 0;
+
+    while(_programa.esRutinaExistente(_rutinaActual) && _indiceDeEjecucion < _programa.longitud(_rutinaActual)){
+        gestorDeOperaciones(_programa.instruccion(_rutinaActual, _indiceDeEjecucion));
+        _indiceDeEjecucion++;
     }
 
 }
@@ -63,7 +83,7 @@ void Calculadora::gestorDeOperaciones(Instruccion inst) {
             pila.push_back(guardoValorSuma);
         }
 
-        else if(pila.size()==0){
+        else if(pila.size() == 0){
             pila.push_back(0);
         }
     }
@@ -77,7 +97,7 @@ void Calculadora::gestorDeOperaciones(Instruccion inst) {
             pila.push_back(guardoValorResta);
         }
 
-        else if(pila.size()==0){
+        else if(pila.size() == 0){
             pila.push_back(0);
         }
     }
@@ -91,14 +111,14 @@ void Calculadora::gestorDeOperaciones(Instruccion inst) {
             pila.push_back(guardoValorMult);
         }
 
-        else if(pila.size()==0){
+        else if(pila.size() == 0){
             pila.push_back(0);
         }
     }
 
     if(inst.operacion() == WRITE) {
         if(pila.size() > 0) {
-            asignarVariable(inst.nombre(),pila[pila.size()-1]);
+            asignarVariable(inst.nombre(), pila[pila.size()-1]);
             pila.pop_back();
         }
 
@@ -130,9 +150,8 @@ void Calculadora::gestorDeOperaciones(Instruccion inst) {
 }
 
 void Calculadora::operacionJUMP(Id rutina) {
-    //ejecutar(rutina);
-    //TEMPORAL, CAMBIAR EL SISTEMA DE RUTINAS LATER
-    ejecutar(rutina);
+    _rutinaActual = rutina;
+    _indiceDeEjecucion = 0;
 }
 
 int Calculadora::valorVariable(Id idVariable) const{
