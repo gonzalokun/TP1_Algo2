@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -199,6 +199,8 @@ stdio.h
 -
 string.h
 -
+strings.h
+-
 sys/types.h
 -
 sys/stat.h
@@ -278,11 +280,13 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Calculadora.cpp
+E:/Proyectos/TP1_Algo2/tp1_base/src/Calculadora.cpp
 Calculadora.h
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Calculadora.h
+E:/Proyectos/TP1_Algo2/tp1_base/src/Calculadora.h
+stdio.h
+-
 
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Calculadora.h
+E:/Proyectos/TP1_Algo2/tp1_base/src/Calculadora.h
 iostream
 -
 vector
@@ -290,25 +294,25 @@ vector
 string
 -
 Programa.h
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Programa.h
+E:/Proyectos/TP1_Algo2/tp1_base/src/Programa.h
 
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Instruccion.cpp
+E:/Proyectos/TP1_Algo2/tp1_base/src/Instruccion.cpp
 Instruccion.h
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Instruccion.h
+E:/Proyectos/TP1_Algo2/tp1_base/src/Instruccion.h
 
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Instruccion.h
+E:/Proyectos/TP1_Algo2/tp1_base/src/Instruccion.h
 iostream
 -
 vector
 -
 Utiles.h
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Utiles.h
+E:/Proyectos/TP1_Algo2/tp1_base/src/Utiles.h
 
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Programa.cpp
+E:/Proyectos/TP1_Algo2/tp1_base/src/Programa.cpp
 Programa.h
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Programa.h
+E:/Proyectos/TP1_Algo2/tp1_base/src/Programa.h
 
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Programa.h
+E:/Proyectos/TP1_Algo2/tp1_base/src/Programa.h
 iostream
 -
 vector
@@ -316,27 +320,27 @@ vector
 string
 -
 Instruccion.h
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Instruccion.h
+E:/Proyectos/TP1_Algo2/tp1_base/src/Instruccion.h
 
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Utiles.h
+E:/Proyectos/TP1_Algo2/tp1_base/src/Utiles.h
 
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/test_calculadora.cpp
+E:/Proyectos/TP1_Algo2/tp1_base/tests/test_calculadora.cpp
 gtest/gtest.h
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/gtest/gtest.h
+E:/Proyectos/TP1_Algo2/tp1_base/tests/gtest/gtest.h
 ../src/Calculadora.h
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Calculadora.h
+E:/Proyectos/TP1_Algo2/tp1_base/src/Calculadora.h
 
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/test_instruccion.cpp
+E:/Proyectos/TP1_Algo2/tp1_base/tests/test_instruccion.cpp
 gtest/gtest.h
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/gtest/gtest.h
+E:/Proyectos/TP1_Algo2/tp1_base/tests/gtest/gtest.h
 ../src/Instruccion.h
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Instruccion.h
+E:/Proyectos/TP1_Algo2/tp1_base/src/Instruccion.h
 
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/test_programa.cpp
+E:/Proyectos/TP1_Algo2/tp1_base/tests/test_programa.cpp
 gtest/gtest.h
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/gtest/gtest.h
+E:/Proyectos/TP1_Algo2/tp1_base/tests/gtest/gtest.h
 ../src/Instruccion.h
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Instruccion.h
+E:/Proyectos/TP1_Algo2/tp1_base/src/Instruccion.h
 ../src/Programa.h
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/src/Programa.h
+E:/Proyectos/TP1_Algo2/tp1_base/src/Programa.h
 

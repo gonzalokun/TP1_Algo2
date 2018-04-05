@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -199,6 +199,8 @@ stdio.h
 -
 string.h
 -
+strings.h
+-
 sys/types.h
 -
 sys/stat.h
@@ -278,9 +280,9 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/src/gtest_main.cc
+E:/Proyectos/TP1_Algo2/tp1_base/tests/google-test/src/gtest_main.cc
 stdio.h
 -
 gtest/gtest.h
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/src/gtest/gtest.h
+E:/Proyectos/TP1_Algo2/tp1_base/tests/google-test/src/gtest/gtest.h
 

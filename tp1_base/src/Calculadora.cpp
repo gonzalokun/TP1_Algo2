@@ -1,4 +1,5 @@
 #include "Calculadora.h"
+#include <stdio.h>
 
 Calculadora::Calculadora(Programa programa) : _programa(programa){
     //var[0].nombre = "x";
@@ -120,7 +121,7 @@ void Calculadora::gestorDeOperaciones(Instruccion inst) {
 
     if(inst.operacion() == SUB) {
         if(pila.size() > 1) {
-            int guardoValorResta = pila[pila.size()-1] - pila[pila.size()-2];
+            int guardoValorResta = pila[pila.size()-2] - pila[pila.size()-1];
 
             pila.pop_back();
             pila.pop_back();

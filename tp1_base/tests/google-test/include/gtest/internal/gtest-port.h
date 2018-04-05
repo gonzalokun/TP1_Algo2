@@ -262,6 +262,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+
+//
+#include <strings.h>
+//
+
 #ifndef _WIN32_WCE
 # include <sys/types.h>
 # include <sys/stat.h>
@@ -2347,7 +2352,8 @@ inline int IsATTY(int /* fd */) { return 0; }
 inline int IsATTY(int fd) { return _isatty(fd); }
 #  endif  // GTEST_OS_WINDOWS_MOBILE
 inline int StrCaseCmp(const char* s1, const char* s2) {
-  return _stricmp(s1, s2);
+  //return _stricmp(s1, s2);
+    return strcasecmp(s1, s2);
 }
 inline char* StrDup(const char* src) { return _strdup(src); }
 # endif  // __BORLANDC__

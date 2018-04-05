@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -204,6 +204,8 @@ stdlib.h
 stdio.h
 -
 string.h
+-
+strings.h
 -
 sys/types.h
 -
@@ -540,21 +542,21 @@ sys/types.h
 src/gtest-internal-inl.h
 ../tests/google-test/src/src/gtest-internal-inl.h
 
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/src/gtest-all.cc
+E:/Proyectos/TP1_Algo2/tp1_base/tests/google-test/src/gtest-all.cc
 gtest/gtest.h
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/src/gtest/gtest.h
+E:/Proyectos/TP1_Algo2/tp1_base/tests/google-test/src/gtest/gtest.h
 src/gtest.cc
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/src/src/gtest.cc
+E:/Proyectos/TP1_Algo2/tp1_base/tests/google-test/src/src/gtest.cc
 src/gtest-death-test.cc
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/src/src/gtest-death-test.cc
+E:/Proyectos/TP1_Algo2/tp1_base/tests/google-test/src/src/gtest-death-test.cc
 src/gtest-filepath.cc
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/src/src/gtest-filepath.cc
+E:/Proyectos/TP1_Algo2/tp1_base/tests/google-test/src/src/gtest-filepath.cc
 src/gtest-port.cc
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/src/src/gtest-port.cc
+E:/Proyectos/TP1_Algo2/tp1_base/tests/google-test/src/src/gtest-port.cc
 src/gtest-printers.cc
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/src/src/gtest-printers.cc
+E:/Proyectos/TP1_Algo2/tp1_base/tests/google-test/src/src/gtest-printers.cc
 src/gtest-test-part.cc
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/src/src/gtest-test-part.cc
+E:/Proyectos/TP1_Algo2/tp1_base/tests/google-test/src/src/gtest-test-part.cc
 src/gtest-typed-test.cc
-/home/gspringhart/springhart/MiVERSIONTPALGO2/TP1_Algo2/tp1_base/tests/google-test/src/src/gtest-typed-test.cc
+E:/Proyectos/TP1_Algo2/tp1_base/tests/google-test/src/src/gtest-typed-test.cc
 

@@ -63,23 +63,23 @@ TEST(test_calculadora, rutina_con_jump_sin_sentido){
 
 //*/
 
-//TEST(test_calculadora, rutina_con_jump){
-//    Programa p;
-//
-//    p.agregarInstruccion("A", Instruccion(PUSH, 45));
-//    p.agregarInstruccion("A", Instruccion(WRITE, "x"));
-//    p.agregarInstruccion("A", Instruccion(JUMP, "B"));
-//
-//    p.agregarInstruccion("B", Instruccion(READ, "x"));
-//    p.agregarInstruccion("B", Instruccion(PUSH, 45));
-//    p.agregarInstruccion("B", Instruccion(SUB));
-//    p.agregarInstruccion("B", Instruccion(WRITE, "x"));
-//
-//    Calculadora c(p);
-//
-//    c.ejecutar("A");
-//    EXPECT_EQ(c.valorVariable("x"), 0);
-//}
+TEST(test_calculadora, rutina_con_jump){
+    Programa p;
+
+    p.agregarInstruccion("A", Instruccion(PUSH, 45));
+    p.agregarInstruccion("A", Instruccion(WRITE, "x"));
+    p.agregarInstruccion("A", Instruccion(JUMP, "B"));
+
+    p.agregarInstruccion("B", Instruccion(READ, "x"));
+    p.agregarInstruccion("B", Instruccion(PUSH, 45));
+    p.agregarInstruccion("B", Instruccion(SUB));
+    p.agregarInstruccion("B", Instruccion(WRITE, "x"));
+
+    Calculadora c(p);
+
+    c.ejecutar("A");
+    EXPECT_EQ(c.valorVariable("x"), 0);
+}
 
 //*/
 
@@ -112,7 +112,6 @@ TEST(test_calculadora, multiples_read){
 
 //*
 
-//CAMBIAR DE LADO LA RESTAAAAAAAA
 TEST(test_calculadora, rutina_con_jump2){
     Programa p;
 
@@ -133,7 +132,7 @@ TEST(test_calculadora, rutina_con_jump2){
 
 //*/
 
-/*/
+//*/
 
 TEST(test_calculadora, rutina_con_write){
     Programa p;
@@ -150,7 +149,7 @@ TEST(test_calculadora, rutina_con_write){
 
 //*/
 
-/*/
+//*/
 
 TEST(test_calculadora, rutina_write_read){
     Programa p;
@@ -168,23 +167,23 @@ TEST(test_calculadora, rutina_write_read){
 //*/
 
 //*/
-//TEST(test_calculadora, rutina_con_jumpz){
-//    Programa p;
-//
-//    p.agregarInstruccion("A", Instruccion(PUSH, 40));
-//    p.agregarInstruccion("A", Instruccion(ADD));
-//    p.agregarInstruccion("A", Instruccion(WRITE, "x"));
-//    p.agregarInstruccion("A", Instruccion(JUMPZ, "B"));
-//
-//    p.agregarInstruccion("B", Instruccion(READ, "x"));
-//    p.agregarInstruccion("B", Instruccion(READ, "x"));
-//    p.agregarInstruccion("B", Instruccion(ADD));
-//    p.agregarInstruccion("B", Instruccion(WRITE, "x"));
-//    p.agregarInstruccion("B", Instruccion(READ, "x"));
-//
-//    Calculadora c(p);
-//
-//    c.ejecutar("A");
-//    EXPECT_EQ(c.valorVariable("x"), 80);
-//}
+TEST(test_calculadora, rutina_con_jumpz){
+    Programa p;
+
+    p.agregarInstruccion("A", Instruccion(PUSH, 40));
+    p.agregarInstruccion("A", Instruccion(ADD));
+    p.agregarInstruccion("A", Instruccion(WRITE, "x"));
+    p.agregarInstruccion("A", Instruccion(JUMPZ, "B"));
+
+    p.agregarInstruccion("B", Instruccion(READ, "x"));
+    p.agregarInstruccion("B", Instruccion(READ, "x"));
+    p.agregarInstruccion("B", Instruccion(ADD));
+    p.agregarInstruccion("B", Instruccion(WRITE, "x"));
+    p.agregarInstruccion("B", Instruccion(READ, "x"));
+
+    Calculadora c(p);
+
+    c.ejecutar("A");
+    EXPECT_EQ(c.valorVariable("x"), 80);
+}
 //*/
