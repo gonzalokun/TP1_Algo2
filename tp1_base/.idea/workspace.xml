@@ -94,8 +94,8 @@
       <file leaf-file-name="Calculadora.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Calculadora.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3204">
-              <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+            <state relative-caret-position="150">
+              <caret line="66" column="44" lean-forward="false" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -106,8 +106,8 @@
       <file leaf-file-name="test_calculadora.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/test_calculadora.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="63" column="4" lean-forward="true" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
+            <state relative-caret-position="505">
+              <caret line="226" column="0" lean-forward="true" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -129,8 +129,8 @@
         <option value="$PROJECT_DIR$/src/Programa.h" />
         <option value="$PROJECT_DIR$/src/Calculadora.h" />
         <option value="$PROJECT_DIR$/tests/google-test/include/gtest/internal/gtest-port.h" />
-        <option value="$PROJECT_DIR$/src/Calculadora.cpp" />
         <option value="$PROJECT_DIR$/tests/test_calculadora.cpp" />
+        <option value="$PROJECT_DIR$/src/Calculadora.cpp" />
       </list>
     </option>
   </component>
@@ -437,39 +437,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 17h 22m 08s.xml">
+    <history-entry file="All_in_test_calculadora_cpp - 2018.04.05 at 15h 13m 10s.xml">
       <configuration name="All in test_calculadora.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 17h 24m 06s.xml">
+    <history-entry file="All_in_test_calculadora_cpp - 2018.04.05 at 15h 20m 23s.xml">
       <configuration name="All in test_calculadora.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 17h 25m 22s.xml">
+    <history-entry file="All_in_test_calculadora_cpp - 2018.04.05 at 15h 22m 22s.xml">
       <configuration name="All in test_calculadora.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 17h 25m 37s.xml">
+    <history-entry file="All_in_test_calculadora_cpp - 2018.04.05 at 15h 22m 49s.xml">
       <configuration name="All in test_calculadora.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_test_calculadora_cpp - 2018.04.04 at 17h 25m 54s.xml">
+    <history-entry file="All_in_test_calculadora_cpp - 2018.04.05 at 15h 23m 44s.xml">
       <configuration name="All in test_calculadora.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_test_calculadora_cpp - 2018.04.05 at 14h 27m 23s.xml">
+    <history-entry file="All_in_test_calculadora_cpp - 2018.04.05 at 15h 23m 58s.xml">
       <configuration name="All in test_calculadora.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_test_calculadora_cpp - 2018.04.05 at 14h 39m 37s.xml">
+    <history-entry file="All_in_test_calculadora_cpp - 2018.04.05 at 15h 35m 43s.xml">
       <configuration name="All in test_calculadora.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_test_calculadora_cpp - 2018.04.05 at 14h 39m 50s.xml">
+    <history-entry file="All_in_test_calculadora_cpp - 2018.04.05 at 15h 35m 59s.xml">
       <configuration name="All in test_calculadora.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_test_calculadora_cpp - 2018.04.05 at 14h 39m 59s.xml">
+    <history-entry file="All_in_test_calculadora_cpp - 2018.04.05 at 15h 36m 09s.xml">
       <configuration name="All in test_calculadora.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_in_test_calculadora_cpp - 2018.04.05 at 14h 40m 24s.xml">
+    <history-entry file="All_in_test_calculadora_cpp - 2018.04.05 at 15h 54m 56s.xml">
       <configuration name="All in test_calculadora.cpp" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28565000" />
+    <option name="totallyTimeSpent" value="31684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -480,7 +480,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32753164" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32753164" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32753164" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -778,6 +778,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -805,6 +806,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -884,8 +886,8 @@
         <state relative-caret-position="226">
           <caret line="2355" column="22" lean-forward="false" selection-start-line="2355" selection-start-column="22" selection-end-line="2355" selection-end-column="22" />
           <folding>
-            <element signature="e#12305#12345#0" expanded="true" />
-            <element signature="e#82770#82815#0" expanded="true" />
+            <element signature="e#12305#12345#0" expanded="false" />
+            <element signature="e#82770#82815#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -910,8 +912,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Calculadora.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3204">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        <state relative-caret-position="150">
+          <caret line="66" column="44" lean-forward="false" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
@@ -920,8 +922,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_calculadora.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" column="4" lean-forward="true" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
+        <state relative-caret-position="505">
+          <caret line="226" column="0" lean-forward="true" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>

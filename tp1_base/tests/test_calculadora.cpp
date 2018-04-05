@@ -9,6 +9,7 @@ TEST(test_calculadora, ejecutar_suma_sin_elem) {
 
     p.agregarInstruccion("MAIN", Instruccion(READ, "x"));
     p.agregarInstruccion("MAIN", Instruccion(PUSH, 2));
+
     p.agregarInstruccion("MAIN", Instruccion(ADD));
     p.agregarInstruccion("MAIN", Instruccion(WRITE, "x"));
 
@@ -22,6 +23,23 @@ TEST(test_calculadora, ejecutar_suma_sin_elem) {
 
     c.ejecutar("MAIN");
     EXPECT_EQ(c.valorVariable("x"),42);
+}
+
+TEST(test_calculadora, test_dieg) {
+    Programa p;
+
+    p.agregarInstruccion("MAINDIEG", Instruccion(READ, "x"));
+    p.agregarInstruccion("MAINDIEG", Instruccion(PUSH, 2));
+    p.agregarInstruccion("MAINDIEG", Instruccion(WRITE, "y"));
+    p.agregarInstruccion("MAINDIEG", Instruccion(ADD));
+    p.agregarInstruccion("MAINDIEG", Instruccion(WRITE, "x"));
+
+    Calculadora c(p);
+
+    c.ejecutar("MAINDIEG");
+
+    EXPECT_EQ(c.valorVariable("y"), 2);
+    EXPECT_EQ(c.valorVariable("x"), 0);
 }
 
 //*/
@@ -185,5 +203,24 @@ TEST(test_calculadora, rutina_con_jumpz){
 
     c.ejecutar("A");
     EXPECT_EQ(c.valorVariable("x"), 80);
+}
+
+TEST(test_calculadora, test_hasta_0){
+    Programa p;
+
+    p.agregarInstruccion("RUTINA0", Instruccion(READ, "n"));
+    p.agregarInstruccion("RUTINA0", Instruccion(PUSH, 1));
+    p.agregarInstruccion("RUTINA0", Instruccion(SUB));
+    p.agregarInstruccion("RUTINA0", Instruccion(WRITE, "n"));
+    p.agregarInstruccion("RUTINA0", Instruccion(READ, "n"));
+    p.agregarInstruccion("RUTINA0", Instruccion(JUMPZ, "FIN"));
+    p.agregarInstruccion("RUTINA0", Instruccion(JUMP, "RUTINA0"));
+
+    Calculadora c(p);
+
+    c.asignarVariable("n", 10);
+    c.ejecutar("RUTINA0");
+
+    EXPECT_EQ(c.valorVariable("n"), 0);
 }
 //*/

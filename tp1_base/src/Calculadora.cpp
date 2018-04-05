@@ -55,6 +55,8 @@ void Calculadora::ejecutar(Id idRutina) {
     _rutinaActual = idRutina;
     _indiceDeEjecucion = 0;
 
+    std::cout << "INICIANDO RUTINA " << _rutinaActual << std::endl;
+
     while(_programa.esRutinaExistente(_rutinaActual) && _indiceDeEjecucion < _programa.longitud(_rutinaActual)){
         gestorDeOperaciones(_programa.instruccion(_rutinaActual, _indiceDeEjecucion));
 
@@ -62,7 +64,7 @@ void Calculadora::ejecutar(Id idRutina) {
 
         //printf("\nPILA EN INSTRUCCION %d:\n", _indiceDeEjecucion);
 
-        std::cout << "PILA EN INSTRUCCION: " << _indiceDeEjecucion << " DE LA RUTINA: " << _rutinaActual << std::endl;
+        std::cout << "PILA EN INSTRUCCION: " << _indiceDeEjecucion + 1 << " DE LA RUTINA: " << _rutinaActual << std::endl;
 
         for(int i = 0; i < pila.size(); i++){
             printf("VALOR DE LA POS %d: %d\n", i, pila[i]);
@@ -200,6 +202,9 @@ void Calculadora::gestorDeOperaciones(Instruccion inst) {
 }
 
 void Calculadora::operacionJUMP(Id rutina) {
+
+    std::cout << "INICIANDO RUTINA " << rutina << std::endl;
+
     _rutinaActual = rutina;
     _indiceDeEjecucion = -1;
 }
