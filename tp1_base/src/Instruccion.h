@@ -50,4 +50,3 @@ private:
 };
 
 #endif /*__INSTRUCCION_H__*/
-

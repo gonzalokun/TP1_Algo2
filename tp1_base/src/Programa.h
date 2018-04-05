@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+
 typedef int memoria;
 
 #include "Instruccion.h"
@@ -51,6 +52,7 @@ private:
 		Id nombreRutina;
 		vector<Instruccion> instruccionesRutina;
 	};
+
 	vector<rutina> rutinas;
 	int getPosRutina(Id rutina)const;
 

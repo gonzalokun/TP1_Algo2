@@ -1,4 +1,5 @@
 #include "Calculadora.h"
+#include <stdio.h>
 
 Calculadora::Calculadora(Programa programa) : _programa(programa){
     //var[0].nombre = "x";
@@ -9,15 +10,21 @@ Calculadora::Calculadora(Programa programa) : _programa(programa){
 
 
 void Calculadora::asignarVariable(Id idVariable, int valor) {
+    //establece el valor de la variable
+    //indicada en la memoria de la calculadora.
+
     int posVar = existeVariable(idVariable);
+
     if(posVar != -1){
         var[posVar].valor = valor;
-    } else {//si no existe la var, entonces la guardamos junto a su valor
+    }
+
+    //si no existe la var, entonces la guardamos junto a su valor
+    else {
         var.push_back({idVariable,valor});
     }
-}/* establece el valor de la
-    variable indicada en la memoria de la calculadora.*/
 
+}
 
 void Calculadora::ejecutar(Id idRutina) {
 
@@ -28,6 +35,7 @@ void Calculadora::ejecutar(Id idRutina) {
      * finaliza de manera inmediata.
      */
 
+    /*
     if(_programa.esRutinaExistente(idRutina)) {
         int recInstRutinas = 0;
 
@@ -36,7 +44,50 @@ void Calculadora::ejecutar(Id idRutina) {
             recInstRutinas++;
         }
     }
+    */
 
+    //*/
+
+    //Con este ciclo se deberia poder cambiar de rutina en tiempo real por medio de jumps
+    //Suponemos que una vez que se hace un jump NO se vuelve atrás
+
+    //SETEAMOS LA PRIMER RUTINA, PUEDE CAMBIAR LUEGO
+    _rutinaActual = idRutina;
+    _indiceDeEjecucion = 0;
+
+    while(_programa.esRutinaExistente(_rutinaActual) && _indiceDeEjecucion < _programa.longitud(_rutinaActual)){
+        gestorDeOperaciones(_programa.instruccion(_rutinaActual, _indiceDeEjecucion));
+
+        //*/
+
+        //printf("\nPILA EN INSTRUCCION %d:\n", _indiceDeEjecucion);
+
+        std::cout << "PILA EN INSTRUCCION: " << _indiceDeEjecucion << " DE LA RUTINA: " << _rutinaActual << std::endl;
+
+        for(int i = 0; i < pila.size(); i++){
+            printf("VALOR DE LA POS %d: %d\n", i, pila[i]);
+        }
+        //*/
+
+        printf("\n");
+
+        _indiceDeEjecucion++;
+    }
+
+    //*/
+
+    printf("\nPILA AL FINAL:\n");
+
+    for(int i = 0; i < pila.size(); i++){
+        printf("VALOR %d: %d\n", i, pila[i]);
+    }
+
+    printf("------------------------------\n");
+    printf("\n");
+
+    //*/
+
+    //*/
 }
 
 /*
@@ -63,27 +114,28 @@ void Calculadora::gestorDeOperaciones(Instruccion inst) {
             pila.push_back(guardoValorSuma);
         }
 
-        else if(pila.size()==0){
+        else if(pila.size() == 0){
             pila.push_back(0);
         }
     }
 
     if(inst.operacion() == SUB) {
         if(pila.size() > 1) {
-            int guardoValorResta = pila[pila.size()-1] - pila[pila.size()-2];
+            int guardoValorResta = pila[pila.size()-2] - pila[pila.size()-1];
 
             pila.pop_back();
             pila.pop_back();
             pila.push_back(guardoValorResta);
         }
 
-        else if(pila.size()==0){
+        else if(pila.size() == 0){
             pila.push_back(0);
         }
     }
 
     if(inst.operacion() == MUL) {
         if(pila.size() > 1) {
+            //std::cout << "CHE PASAMOS POR CUANDO LA PILA TIENE 2 O MAS COSAS" << std::endl;
             int guardoValorMult = pila[pila.size()-1] * pila[pila.size()-2];
 
             pila.pop_back();
@@ -91,23 +143,37 @@ void Calculadora::gestorDeOperaciones(Instruccion inst) {
             pila.push_back(guardoValorMult);
         }
 
-        else if(pila.size()==0){
+        else if(pila.size() == 0){
+            //std::cout << "CHE PASAMOS POR CUANDO LA PILA NO TIENE NADA" << std::endl;
             pila.push_back(0);
         }
+
+        //*/
+        else if(pila.size() == 1){
+            //std::cout << "CHE PASAMOS POR CUANDO LA PILA TIENE 1 cosa" << std::endl;
+            //pila.pop_back();
+            //pila.push_back(0);
+            pila[0] = 0;
+        }
+        //*/
     }
 
     if(inst.operacion() == WRITE) {
         if(pila.size() > 0) {
-            asignarVariable(inst.nombre(),pila[pila.size()-1]);
+            asignarVariable(inst.nombre(), pila[pila.size()-1]);
             pila.pop_back();
         }
 
         else {
-            asignarVariable(inst.nombre(),0);
+            asignarVariable(inst.nombre(), 0);
         }
     }
 
     if(inst.operacion() == READ) {
+        //*/
+        std::cout << "LEIDO EL VALOR DE la variable " << inst.nombre() << " IGUAL A " << valorVariable(inst.nombre()) << std::endl;
+        //*/
+
         pila.push_back(valorVariable(inst.nombre()));
     }
 
@@ -117,8 +183,12 @@ void Calculadora::gestorDeOperaciones(Instruccion inst) {
 
     if(inst.operacion() == JUMPZ) {
 
-        if(pila.size() == 0 || (pila.size() != 0) && (pila[pila.size()-1] == 0) ) {
-            pila.pop_back();
+        if(pila.size() == 0 || (pila.size() != 0) && (pila[pila.size() - 1] == 0) ) {
+
+            if(pila.size() != 0){
+                pila.pop_back();
+            }
+
             operacionJUMP(inst.nombre());
         }
 
@@ -130,23 +200,24 @@ void Calculadora::gestorDeOperaciones(Instruccion inst) {
 }
 
 void Calculadora::operacionJUMP(Id rutina) {
-    //ejecutar(rutina);
-    //TEMPORAL, CAMBIAR EL SISTEMA DE RUTINAS LATER
-    ejecutar(rutina);
+    _rutinaActual = rutina;
+    _indiceDeEjecucion = -1;
+}
+
+int Calculadora::existeVariable(Id nombre) const{
+    int i = 0;
+
+    while(i < var.size() && var[i].nombre != nombre) {
+        i++;
+    }
+
+    return ((var.size() == 0 && i == 0) || (i >= var.size()))? -1 : i;
 }
 
 int Calculadora::valorVariable(Id idVariable) const{
     int posVar = existeVariable(idVariable);
-    return (posVar!=-1)? var[posVar].valor : 0;
+    return (posVar != -1) ? var[posVar].valor : 0;
 }
 /*devuelve que tiene la variable indicada
             en la memoria de la calculadora. Si nunca se le dio valor a dicha variable, se asume que su valor
             por defecto es 0.*/
-
-int Calculadora::existeVariable(Id nombre) const{
-    int i = 0;
-    while(i < var.size() && var[i].nombre!=nombre) {
-        i++;
-    }
-    return (var.size() == 0 && i == 0)? -1 : i;
-}
